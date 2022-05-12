@@ -1,2 +1,2 @@
 # ClassicMC-Studios.github.io
-summit
+<a href= "index.html">summit</a>
