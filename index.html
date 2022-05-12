@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: rgb(0, 0, 0)
+}
+.rock1 {
+    opacity: 0;
+}
+</style>  
+<img id="rock1" class = "rock1" width="0" height="0"
+src="rock1.png" alt="rock1">  
+
+<img id="rock2" class = "rock1" width="0" height="0"
+src="rock2.png" alt="rock2">  
+
+<img id="rock0" class = "rock1" width="0" height="0"
+src="rock0.png" alt="rock0">
+</head>    
+<body>
+<p align="center">    
+<canvas id="myCanvas" width = "720"height="480"style="border:1px solid #000000;">
+</canvas>
+</p>
+<script>
+window.onload = function(){    
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var rock1 = document.getElementById("rock1");
+var rock2 = document.getElementById("rock2");
+var rock0 = document.getElementById("rock0");
+var scene = 0;
+function drawBG(){
+ctx.fillStyle = "#00cc00";
+ctx.fillRect(0, 310, 720, 175);
+ctx.fillStyle = "#66ffff";
+ctx.fillRect(0,0,720,310);
+}
+
+function redraw(){
+if (scene == 0){
+    drawBG()
+    ctx.drawImage(rock1,240,200,200,200);
+    ctx.fillStyle = "#000000";
+    ctx.font = "30px Arial";
+    ctx.fillText("Rock Simulator pocket 2022", 5, 30);
+    ctx.fillText("By, ClassicMC studios", 210, 470);
+}    
+if (scene == 1){
+    drawBG();    
+    ctx.drawImage(rock1,240,200,200,200);
+}
+else if (scene == 2){
+    drawBG();
+    ctx.drawImage(rock2,240,200,200,200);    
+}
+else if (scene == 3){
+    drawBG();
+    ctx.drawImage(rock0,240,200,200,200); 
+}
+}
+redraw();
+canvas.addEventListener('click',function(evt){
+     scene +=1;
+     redraw();
+     if(scene >= 4){
+         scene = 1;
+         redraw();
+     }
+});
+
+}
+</script>    
+</body>
+</html>
