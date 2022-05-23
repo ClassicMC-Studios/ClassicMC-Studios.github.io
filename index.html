@@ -69,7 +69,19 @@
             transition: 0.3s;
         }
         .lister:hover{
-            font-size:25px;
+            font-size:20px;
+            color: black;
+        }
+        .foot{
+            font-size: 10px;
+            font-family:sans-serif;
+        }
+        #background{
+            background-color: rgb(240, 240, 240);
+            border-radius: 15px;   
+        }
+        .mini{
+            font-size: 15px;
         }
         a:link {
             color: rgb(38, 0, 255);   
@@ -123,18 +135,24 @@
     <h4 align="center" class="textBDU"></h4>
     <h4 align="center" class="textBDU"></h4>
     <p align="center" class="plain"><b></b><p/>
-    <h1 align="center" onClick="fun()"><span class="cmcHover" id= "kisouTITLE">Kisoù</span></h1>
+    <h1 align="center" onClick="fun()"><span class="cmcHover" id= "kisouTITLE">Kisoù</span><br/><span class="cmcHover">Early</span><span class="cmcHover"> Alpha</span></h1>
     <p align="center"><span class="text"><span class="cmcHover">A</span> <span class="cmcHover">custom</span> <span class="cmcHover">language</span></span></p>
     <p align="center"><b><span class="cmcHover">Click</span> <span class="cmcHover">the</span> <span class="cmcHover">sentance</span> <span class="cmcHover">below!</span></b></p>
     <p align="center" onClick="clickedKisou()"><span id="tbc">Hi! My Name is Austin. How are you?</span></p>
     <p align="center" class="textBDU"></p>
-    <p align="center" class="plain"><em><span class="cmcHover">The</span> <span class="cmcHover">basics</span></em></p>
+    <p align="center" class="plain" id="background" onclick="showBasics()"><em><span class="cmcHover">The</span> <span class="cmcHover">basics</span></em><br/><span class="mini">Click to view/hide</span></p>
     <!--Kisou words-->
-    <p class="lister" align = "center">Hi = <em>Ki</em></p>
-    <p class="lister" align = "center">Hello = <em>Kish</em></p>
-    <p class="lister" align = "center">What is your name = <em>Qos nom</em></p>
-    <p align="center" class="text">Docs</p>
-    <p align="center" class="nbt"><u><a href="https://kisou-lang.github.io"><span class="cmcHoverr">Access</span> <span class="cmcHoverr">The</span> <span class="cmcHoverr">docs</span> <span class="cmcHoverr">here</span></a></u></p>
+    <p class="lister" align = "center" id="un"></p>
+    <p class="lister" align = "center" id="deux"></p>
+    <p class="lister" align = "center" id="trois"></p>
+    <p class="lister" align = "center" id="quatre"></p>
+    <p class="lister" align = "center" id="cinq"></p>
+    <p class="lister" align = "center" id="six"></p>
+    <p class="lister" align = "center" id="sept"></p>
+    <p align="center" class="text"><span class="cmcHover">Docs</span></p>
+    <p align="center" class="nbt"><u><a href="https://kisou-lang.github.io"><span class="cmcHoverr">Access</span> <span class="cmcHoverr">The</span> <span class="cmcHoverr">Practicer</span> <span class="cmcHoverr">here</span></a></u></p>
+    <p align="center" class="nbt"><u><a href="kd/Kiso.html"><span class="cmcHoverr">Access</span> <span class="cmcHoverr">The</span> <span class="cmcHoverr">Docs</span> <span class="cmcHoverr">here</span></a></u></p>
+    <p align="center"><span>This language is still early access only<br/>And still needs further development.<br/>If you have anything to reccomend email me at<br/><span class="cmcHoverBLUE">classicmclive@gmail.com</span><br/><br/><br/><span class="foot"><b>(c)2022 ClassicMC</b></span></span></p>
     <!--Kisou language mouse pressed script-->
     <script>
         function clickedKisou(){
@@ -143,6 +161,26 @@
             }
             else{
                 document.getElementById("tbc").innerHTML = "Hi! My Name is Austin. How are you?";
+            }
+        }
+        function showBasics(){
+            if(document.getElementById("un").innerHTML == "Hi = <em>Ki</em>"){
+                document.getElementById("un").innerHTML = "";
+                document.getElementById("deux").innerHTML = "";
+                document.getElementById("trois").innerHTML = "";
+                document.getElementById("quatre").innerHTML = "";
+                document.getElementById("cinq").innerHTML = "";
+                document.getElementById("six").innerHTML = "";
+                document.getElementById("sept").innerHTML = "";
+            }
+            else{
+                document.getElementById("un").innerHTML = "Hi = <em>Ki</em>";
+                document.getElementById("deux").innerHTML = "Hello = <em>Kish</em>";
+                document.getElementById("trois").innerHTML = "What is your name = <em>Qos nom</em>";
+                document.getElementById("quatre").innerHTML = "I am = <em>Be tu</em>";
+                document.getElementById("cinq").innerHTML = "How are you = <em>Ker oh see</em>";
+                document.getElementById("six").innerHTML = "Good = <em>Paine</em>";
+                document.getElementById("sept").innerHTML = "Bad = <em>Bod</em>";
             }
         }
     </script>
