@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Pythagoran Therom</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            input[type=text]{
+                width: 50%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            #fakeSubmit{
+                width: 50%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .awnser{
+                font-size: 15px;
+                transition: 1s;
+            }
+            .updated{
+                font-size: 30px;
+            }
+            </style>    
+    </head>
+    <body>
+        <h1 align = "center">The Pythagoran Therom<br/>Calculator</h1>
+        <p align="center" style="font-size:10px;"><em>by, ClassicMC</em></p>
+        <p id = "awnser" class="awnser"align = "center">Awnser:</p>
+        <p id = "tester" align = "center"></p>
+        
+        <form>
+            <p align="center">
+                <input type="text" id="fname" name="fname" placeholder="Leg A"/>
+                <input type="text" id="fname2" name="fname2" placeholder="Leg B"/><br/>
+                <!--<input type="submit" value="Submit" onmouseleave="getInputFromTextBox()">-->
+            </p>
+        </form>
+        <p align="center">
+            <span id="fakeSubmit" onclick="getInputFromTextBox()">Submit</span>
+        </p>
+        <script>
+            class Num{
+                numbers = [];
+            }
+        </script>
+        <script>
+            let num = new Num();
+            var inputone;
+            var inputtwo;
+            let finalint
+            function calcHypotenuse(a, b) {
+                return (Math.sqrt((a * a) + (b * b)));
+            }
+            //function aez(){
+            //    document.getElementById("awnser").innerHTML=document.getElementById("fname")
+            //}
+            //document.getElementById("awnser").innerHTML = calcHypotenuse(12,5).toString();
+            //document.getElementById("awnser").innerHTML=document.getElementsByName("fname").item(2)
+            function getInputFromTextBox() {
+                var sus = setTimeout(update(),500);
+                function update(){
+                    inputone = document.getElementById("fname").value;
+                    inputtwo = document.getElementById("fname2").value;
+                    inputone = parseInt(inputone)
+                    inputtwo = parseInt(inputtwo)
+                    //alert(parseInt(inputone)+parseInt(inputtwo))
+                    num.numbers.push(inputone)
+                    num.numbers.push(inputtwo)
+                    finalint = /*parseInt(inputone)+parseInt(inputtwo)*/ calcHypotenuse(parseInt(inputone),parseInt(inputtwo))
+                    //alert(num.numbers)
+                    document.getElementById("awnser").innerHTML = "Awnser:"+ finalint
+                    document.querySelector(".awnser").className = "awnser updated";
+                }
+            }
+        </script>
+    </body>
+</html>
