@@ -32,57 +32,47 @@
             .updated{
                 font-size: 30px;
             }
+            .finalized{
+                font-size: 15px;
+            }
             </style>    
     </head>
     <body>
+        <!--Main HTML parts-->
         <h1 align = "center">The Pythagoran Therom<br/>Calculator</h1>
         <p align="center" style="font-size:10px;"><em>by, ClassicMC</em></p>
-        <p id = "awnser" class="awnser"align = "center">Awnser:</p>
+        <p id = "awnser" class="awnser"align = "center">Awnser For Leg C:</p>
         <p id = "tester" align = "center"></p>
-        
-        <form>
+        <!--Forms for creation of calculation-->
+        <form onclick="clearAndReset()">
             <p align="center">
                 <input type="text" id="fname" name="fname" placeholder="Leg A"/>
                 <input type="text" id="fname2" name="fname2" placeholder="Leg B"/><br/>
-                <!--<input type="submit" value="Submit" onmouseleave="getInputFromTextBox()">-->
             </p>
         </form>
         <p align="center">
             <span id="fakeSubmit" onclick="getInputFromTextBox()">Submit</span>
         </p>
+        <!--Code for scripts-->
         <script>
-            class Num{
-                numbers = [];
-            }
-        </script>
-        <script>
-            let num = new Num();
             var inputone;
             var inputtwo;
-            let finalint
+            let finalint;
             function calcHypotenuse(a, b) {
                 return (Math.sqrt((a * a) + (b * b)));
             }
-            //function aez(){
-            //    document.getElementById("awnser").innerHTML=document.getElementById("fname")
-            //}
-            //document.getElementById("awnser").innerHTML = calcHypotenuse(12,5).toString();
-            //document.getElementById("awnser").innerHTML=document.getElementsByName("fname").item(2)
             function getInputFromTextBox() {
-                var sus = setTimeout(update(),500);
-                function update(){
-                    inputone = document.getElementById("fname").value;
-                    inputtwo = document.getElementById("fname2").value;
-                    inputone = parseInt(inputone)
-                    inputtwo = parseInt(inputtwo)
-                    //alert(parseInt(inputone)+parseInt(inputtwo))
-                    num.numbers.push(inputone)
-                    num.numbers.push(inputtwo)
-                    finalint = /*parseInt(inputone)+parseInt(inputtwo)*/ calcHypotenuse(parseInt(inputone),parseInt(inputtwo))
-                    //alert(num.numbers)
-                    document.getElementById("awnser").innerHTML = "Awnser:"+ finalint
-                    document.querySelector(".awnser").className = "awnser updated";
-                }
+                document.querySelector(".awnser").className = "awnser";
+                inputone = document.getElementById("fname").value;
+                inputtwo = document.getElementById("fname2").value;
+                inputone = parseFloat(inputone);
+                inputtwo = parseFloat(inputtwo);
+                finalint = calcHypotenuse(parseFloat(inputone),parseFloat(inputtwo));
+                document.getElementById("awnser").innerHTML = "Awnser For Leg C:"+ finalint;
+                document.querySelector(".awnser").className = "awnser updated";
+            }
+            function clearAndReset(){
+                document.querySelector(".awnser").className = "awnser finalized";
             }
         </script>
     </body>
