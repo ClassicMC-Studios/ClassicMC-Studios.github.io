@@ -52,6 +52,7 @@
         </form>
         <p align="center">
             <span id="fakeSubmit" onclick="getInputFromTextBox()">Submit</span>
+            <span id="fakeSubmit" onclick="clearInput()">Clear</span>
         </p>
         <!--Code for scripts-->
         <script>
@@ -72,6 +73,10 @@
                 document.querySelector(".awnser").className = "awnser updated";
             }
             function clearAndReset(){
+                document.querySelector(".awnser").className = "awnser finalized";
+            }
+            function clearInput(){
+                document.querySelector(".awnser").innerHTML = "Awnser For Leg C:"
                 document.querySelector(".awnser").className = "awnser finalized";
             }
         </script>
