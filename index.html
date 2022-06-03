@@ -57,6 +57,9 @@
             color:blue;
             transition: 0.3s;
         }
+        .gray{
+            color: gray;
+        }
         .cmcHoverBLUE:hover{
             color:lightblue;
             transition: 0.3s;
@@ -122,7 +125,7 @@
 <body> 
     <!--Titles-->
     <h1 align = "center"><b class="cmcHover">ClassicMC's</b> <b class="cmcHover">Studio</b> <br/><b class="cmcHover">Early Alpha</b></h1>
-    <p align="center" class="nbtMini" onclick="darkmodebeta()"><span><u>Dark Mode Beta</u></span></p>
+    <p align="center" class="nbtMini" onclick="darkmodebeta()"><span><u>Dark Mode Beta (May not work on Mobile)</u></span></p>
     <p align="center"><span class="text"><span class="cmcHover">---Welcome---</span></span></p>
     <p align="center"><span class="text"><span class="cmcHover">---</span><span class="cmcHover">This</span> <span class="cmcHover">is</span><span class="cmcHover"> the</span> <span class="cmcHover">main</span> <span class="cmcHover">area</span> <span class="cmcHover">to</span> <span class="cmcHover">access</span> <span class="cmcHover">everything</span> <span class="cmcHover">ClassicMC</span><span class="cmcHover">---</span></span></p>
     <!--Links-->
@@ -137,15 +140,15 @@
     <p align="center"><span class="nbt"><u><a href="da/drawing.html">Drawing App</a></u></span></p>
     <p align="center"><span class="nbt"><u><a href="afpc/index.html">A Final Phone Call (Takes a second to load)</a></u></span></p>
     <p align="center"><span class="nbt"><u><a href="pyt/index.html">A Pythagorean Theorem calculator</a></u></span></p>
+    <p align="center"><span class="nbt"><u><a href="tlf/ogtlf.html">The last leaf (Proof Of Concept only)</a></u></span></p>
     <!--Games DOWNLOAD ONLY-->
     <p align="center"><span class="text"><span class="cmcHover">Download</span> <span class="cmcHover">only</span></span></p>
     <p align="center"><span class="nbt"><u><a href="https://classicmc.itch.io/omc">Old Man Consequences</a></u></span></p>
-    <p align="center"><span class="nbt"><u><a href="https://github.com/creativeDrawerStudios/TheLastLeaf">The last leaf (Javasript only)</a></u></span></p>
     <!--What I do-->
     <h3 align="center"><span><span class="cmcHover">What</span> <span class="cmcHover">I</span> <span class="cmcHover">do</span></span></h1>
-    <p align="center" id="texterr"><span><span class="text"><span class="cmcHover">--Hi!--</span></span><br/><br/>I work on games and game engines.<br/>I work alone with help and ideas from family and freinds.<br/>
-    I usually post on github with games posted on gamejolt.<br/>You can contact me at <span class="cmcHoverBLUE">classicmclive@gmail.com</span></br>I have a brother as well
-    <br/><span class="cmcHoverBLUE">@austinIs2</span> on scratch and newgrounds.</span></p>
+    <p align="center" id="texterr"><span><span class="text"><span class="cmcHover">--Hi!--</span></span><br/><br/><span class="gray">I work on games and game engines.<br/>I work alone with help and ideas from family and freinds.<br/>
+    I usually post on github with games posted on gamejolt.<br/>You can contact me at</span> <span class="cmcHoverBLUE">classicmclive@gmail.com</span></br><span class="gray">I have a brother as well</span>
+    <br/><span class="cmcHoverBLUE">@austinIs2</span> <span class="gray">on scratch and newgrounds.</span></span></p>
     <h4 align="center" class="textBDU"></h4>
     <h4 align="center" class="textBDU"></h4>
     <p align="center" class="plain"><b></b><p/>
@@ -170,7 +173,7 @@
     -->
     <p align="center"><span class="nbt"><u><a href="https://kisou-lang.github.io">Access the Practicer</a></u></span></p>
     <p align="center"><span class="nbt"><u><a href="kd/Kiso.html">Access the Docs</a></u></span></p>
-    <p align="center" id="texter"><span>This language is still early access only<br/>And still needs further development.<br/>If you have anything to reccomend email me at<br/><span class="cmcHoverBLUE">classicmclive@gmail.com</span><br/><span class="foot"><b>(c)2022 ClassicMC</b></span></span></p>
+    <p align="center" id="texter"><span class="gray">This language is still early access only<br/>And still needs further development.<br/>If you have anything to reccomend email me at<br/><span class="cmcHoverBLUE">classicmclive@gmail.com</span><br/><span class="foot"><b>(c)2022 ClassicMC</b></span></span></p>
     <p class="textBDU"></p>
     <p class="textBDU"><br/></p>
     <!--Kisou language mouse pressed script-->
@@ -206,13 +209,9 @@
         function darkmodebeta(){
             if(document.body.style.backgroundColor == "black"){
                 document.body.style.backgroundColor = "white";
-                document.getElementById("texter").style.color = "black";
-                document.getElementById("texterr").style.color = "black";
             }
             else{
                 document.body.style.backgroundColor = "black";
-                document.getElementById("texter").style.color = "white";
-                document.getElementById("texterr").style.color = "white";
             }
         }
     </script>
