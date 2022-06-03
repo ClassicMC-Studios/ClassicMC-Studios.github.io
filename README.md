@@ -1,5 +1,8 @@
 # ClassicMC's Studio
 > The main Website for all things **ClassicMC** <br/>
+## Brand new
+> Dark Mode now fully funcational <br/>
+> Added The Last Leaf (proof of concept)
 
 <b><a href="https://classicmc-studios.github.io">The website</a></b>
 
