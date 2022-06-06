@@ -1,126 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body{
-            font-family: Sans-serif;
-        }
-        h1{
-            border-style: solid;
-            background-color: rgb(255, 255, 255);
-            border-radius: 20px;
-        }
-        h3{
-            border-style: solid;
-            background-color: rgb(255, 255, 255);
-            border-radius: 20px;
-        }
-        .text{
-            border:4px black double;
-            /*border-radius: 10px;*/
-            transition: 0.3s;
-            background-color: rgb(255, 255, 255);
-            border-radius: 0px;
-        }
-        .text:hover{
-            border:4px black dashed;
-        }
-        .nbt{
-            font-size: 20px;
-            color: rgb(38, 0, 255);
-            transition: 0.3s;
-        }
-        .lit{
-            color: rgb(38, 0, 255);   
-        }
-        .nbt:hover{
-            font-size: 30px;
-        }
-        .textBDU{
-            border-bottom: 4px solid lightgray;
-        }
-        .plain{
-            font-size:30px;
-        }
-        .ta{
-            text-align: center;
-        }
-        .cmcHover{
-            color:black;
-            transition: 0.3s;
-        }
-        .cmcHoverr{
-            color:blue;
-            transition: 0.3s;
-        }
-        .cmcHoverBLUE{
-            color:blue;
-            transition: 0.3s;
-        }
-        .gray{
-            color: gray;
-        }
-        .cmcHoverBLUE:hover{
-            color:lightblue;
-            transition: 0.3s;
-        }
-        .cmcHover:hover{    
-            color:lightgray;
-        }
-        #tbc{
-            color:gray;
-            border: 4px dotted;
-        }
-        .lister{
-            font-size:20px;
-            color:gray;
-            transition: 0.3s;
-        }
-        .lister:hover{
-            font-size:20px;
-            color: black;
-        }
-        .foot{
-            font-size: 10px;
-            font-family:sans-serif;
-        }
-        #background{
-            background-color: rgb(240, 240, 240);
-            border-radius: 15px;   
-        }
-        .mini{
-            font-size: 15px;
-        }
-        #text2{
-            background-color: rgb(240, 240, 240);
-            border-radius: 0px;   
-        }
-        .nbtMini{
-            font-size: 10px;
-            color: rgb(38, 0, 255); 
-        }
-        a:link {
-            color: rgb(38, 0, 255);   
-            background-color: transparent;
-            text-decoration: none;
-        }
-        a:visited {
-            color: rgb(38, 0, 255);   
-            background-color: transparent;
-            text-decoration: none;
-        }
-        a:hover {
-            color: rgb(38, 0, 255);   
-            background-color: transparent;
-            text-decoration: none;
-        }
-        a:active {
-            color: rgb(115, 90, 255);   
-            background-color: transparent;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>ClassicMC's Studio</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="apple-touch-icon" href="img.png">
 </head>    
 <body> 
     <!--Titles-->
@@ -131,6 +15,12 @@
     <p align="center"><span class="nbt"><u><a href="https://github.com/ClassicMC-Studios/c.Js-v2">c.Js v2</a></u></span></p>
     <p align="center"><span class="nbt"><u><a href="https://github.com/creativeDrawerStudios/eSharp">eSharp</a></u></span></p>
     <!--Games-->
+    <h3 align="center"><span class="cmcHover">News</span></h3>
+    <p align="center"><span class="text"><span class="cmcHover">What</span> <span class="cmcHover">I'm </span><span class="cmcHover">doing</span></span></p>
+    <p align="center" onclick="showNews()" class="gray"><span><b>Show News</b></span></p>
+    <!--Actual News-->
+    <p align="center" id="news1" class="gray"></p>
+    <p align="center" id="news2" class="gray"></p>
     <h3 align="center"><span><span class="cmcHover">Games</span></span></h1>
     <p align="center"><span class="text"><span class="cmcHover">Runnable</span> <span class="cmcHover">in</span> <span class="cmcHover">browser</span></span></p>
     <p align="center"><span class="nbt"><u><a href="ufg/index.html">Untitled Fish Game</a></u></span></p>
@@ -178,54 +68,6 @@
     <p align="center"><span class="nbtMini" onclick="darkmodebeta()"><u>Dark Mode</u></span></p>
     <p align="center" class="gray"><span class="foot"><b>(c)2022 ClassicMC</b></span></p>
     <!--Kisou language mouse pressed script-->
-    <script>
-        function clickedKisou(){
-            if(document.getElementById("tbc").innerHTML == "Hi! My Name is Austin. How are you?"){
-                document.getElementById("tbc").innerHTML = "Ki! Be tu Austin. Ker oh see? ";
-            }
-            else{
-                document.getElementById("tbc").innerHTML = "Hi! My Name is Austin. How are you?";
-            }
-        }
-        function showBasics(){
-            if(document.getElementById("un").innerHTML == "Hi = <em>Ki</em>"){
-                document.getElementById("un").innerHTML = "";
-                document.getElementById("deux").innerHTML = "";
-                document.getElementById("trois").innerHTML = "";
-                document.getElementById("quatre").innerHTML = "";
-                document.getElementById("cinq").innerHTML = "";
-                document.getElementById("six").innerHTML = "";
-                document.getElementById("sept").innerHTML = "";
-            }
-            else{
-                document.getElementById("un").innerHTML = "Hi = <em>Ki</em>";
-                document.getElementById("deux").innerHTML = "Hello = <em>Kish</em>";
-                document.getElementById("trois").innerHTML = "What is your name = <em>Qos nom</em>";
-                document.getElementById("quatre").innerHTML = "I am = <em>Be tu</em>";
-                document.getElementById("cinq").innerHTML = "How are you = <em>Ker oh see</em>";
-                document.getElementById("six").innerHTML = "Good = <em>Paine</em>";
-                document.getElementById("sept").innerHTML = "Bad = <em>Bod</em>";
-            }
-        }
-        function darkmodebeta(){
-            if(document.body.style.backgroundColor == "black"){
-                document.body.style.backgroundColor = "white";
-            }
-            else{
-                document.body.style.backgroundColor = "black";
-            }
-        }
-    </script>
-    <!--Script for saying Early Alpha on kisou title-->
-    <script>
-        function fun(){
-            if(document.getElementById("kisouTITLE").innerHTML == "Kisoù </br> Early alpha"){
-                document.getElementById("kisouTITLE").innerHTML = "Kisoù";
-            }
-            else{
-                document.getElementById("kisouTITLE").innerHTML = "Kisoù </br> Early alpha"
-            }
-        } 
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
