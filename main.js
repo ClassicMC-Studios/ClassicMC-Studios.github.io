@@ -39,11 +39,13 @@ let newscollapse;
             if(newscollapse){
                 document.getElementById("news1").innerHTML = "";
                 document.getElementById("news2").innerHTML = "";
+                document.getElementById("news3").innerHTML = "";
                 newscollapse = false;
             }
             else{
                 document.getElementById("news1").innerHTML = "<b>The Last Leaf</b><br/>Working on basic Pixel Art testing<br/>110 Lines of code";
                 document.getElementById("news2").innerHTML = "<b>c.Js</b><br/>Version 2.0 out now!<br/><em>Includes</em><br/>New X,Y position based system<br/>Updated Rect to Dot";
+                document.getElementById("news3").innerHTML = "<b>This Website</b><br/>Added Poetry Website<br/>Updating Links<br/>241 Combined lines of code";
                 newscollapse = true;
             }
         } 
