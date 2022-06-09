@@ -20,9 +20,9 @@ let newscollapse;
             else{
                 document.getElementById("un").innerHTML = "Hi = <em>Ki</em>";
                 document.getElementById("deux").innerHTML = "Hello = <em>Kish</em>";
-                document.getElementById("trois").innerHTML = "What is your name = <em>Qos nom</em>";
+                document.getElementById("trois").innerHTML = "What is your name? = <em>Venter kos qo nom?</em>";
                 document.getElementById("quatre").innerHTML = "I am = <em>Be tu</em>";
-                document.getElementById("cinq").innerHTML = "How are you = <em>Ker oh see</em>";
+                document.getElementById("cinq").innerHTML = "How are you = <em>Ker kos see?</em>";
                 document.getElementById("six").innerHTML = "Good = <em>Paine</em>";
                 document.getElementById("sept").innerHTML = "Bad = <em>Bod</em>";
             }
@@ -40,12 +40,14 @@ let newscollapse;
                 document.getElementById("news1").innerHTML = "";
                 document.getElementById("news2").innerHTML = "";
                 document.getElementById("news3").innerHTML = "";
+                document.getElementById("news4").innerHTML = "";
                 newscollapse = false;
             }
             else{
                 document.getElementById("news1").innerHTML = "<b>The Last Leaf</b><br/>Working on basic Pixel Art testing<br/>110 Lines of code";
                 document.getElementById("news2").innerHTML = "<b>c.Js</b><br/>Version 2.0 out now!<br/><em>Includes</em><br/>New X,Y position based system<br/>Updated Rect to Dot";
                 document.getElementById("news3").innerHTML = "<b>This Website</b><br/>Added Poetry Website<br/>Updating Links<br/>241 Combined lines of code";
+                document.getElementById("news4").innerHTML = "<b>IRL</b><br/>Learning French & Norwegian";
                 newscollapse = true;
             }
         } 
