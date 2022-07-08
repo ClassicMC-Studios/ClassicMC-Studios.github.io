@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(0, 0, 0);
+            }
+            #test{
+                
+                transform: translate(115px,55px);
+            }
+        </style>
+        <title>Flags</title>
+    </head>
+    <body>
+        <p align="center">
+            <!--Koso-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:rgb(255, 0, 0)" rx="30" ry="30" />
+                <rect width = "150" height="125" x="35" y="13" style="fill:rgb(255, 255, 255)" rx="30" ry="30"/>
+                <circle r="40" cx="100" cy="75"  fill="red"/>
+            </svg>
+            <!--Norway-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:rgb(255, 0, 0)" rx="30" ry="30" />
+                <rect width="200" height="40" y="55" style="fill:white"/>
+                <rect width="40" height="150" x="55" style="fill:white"/>
+                <rect width="200" height="20" y="65" style="fill:blue"/>
+                <rect width="20" height="150" x="65" style="fill:blue"/>
+            </svg> <br/>
+            <!--Iceland-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:blue" rx="30" ry="30" />
+                <rect width="200" height="40" y="55" style="fill:white"/>
+                <rect width="40" height="150" x="55" style="fill:white"/>
+                <rect width="200" height="20" y="65" style="fill:red"/>
+                <rect width="20" height="150" x="65" style="fill:red"/>
+            </svg>
+            <!--Sweeden-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:blue" rx="30" ry="30" />
+                <rect width="200" height="30" y="60" style="fill:yellow"/>
+                <rect width="30" height="150" x="60" style="fill:yellow"/>
+            </svg> <br/>
+            <!--Finland-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:white" rx="30" ry="30" />
+                <rect width="200" height="30" y="60" style="fill:blue"/>
+                <rect width="30" height="150" x="60" style="fill:blue"/>
+            </svg>
+            <!--Greenland-->
+            <svg width="200" height="150">
+                <clipPath id="cut-off">
+                    <rect x="0" y="64" width="130" height="50"/>
+                </clipPath>
+                <rect width="200" height="150" style="fill:rgb(255, 255, 255)" rx="30" ry="30" />
+                <rect width="200" height="85" y="65"style="fill:rgb(255, 0, 0)" rx="30" ry="30" />
+                <rect width="200" height="45" y="65"style="fill:rgb(255, 0, 0)"  />
+                <circle cx="65" cy="64" r="40" style="fill:red" />
+                <circle cx="65" cy="64" r="40" style="fill:white" clip-path="url(#cut-off)"  />
+            </svg> <br/>
+            <!--France-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:white" rx="30" ry="30" />
+                <rect width="70" height="150" style="fill:rgb(0, 183, 255)" rx="30" ry="30" />
+                <rect width="70" height="150" x="130" style="fill:red" rx="30" ry="30" />
+                <rect width="40" height="150" x="30" style="fill:rgb(0, 183, 255)" rx="0" ry="0" />
+                <rect width="40" height="150" x="130" style="fill:rgb(255, 0, 0)" rx="0" ry="0" />
+            </svg>
+            <!--Italy-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:white" rx="30" ry="30" />
+                <rect width="70" height="150" style="fill:rgb(0, 255, 0);" rx="30" ry="30" />
+                <rect width="70" height="150" x="130" style="fill:red" rx="30" ry="30" />
+                <rect width="40" height="150" x="30" style="fill:rgb(0, 255, 0)" rx="0" ry="0" />
+                <rect width="40" height="150" x="130" style="fill:rgb(255, 0, 0)" rx="0" ry="0" />
+            </svg> <br/>
+            <!--Japan-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:white" rx="30" ry="30" />
+                <circle r="40" style="fill:red;" cx="100" cy="75"/>
+            </svg>
+            <!--Turkey-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:red" rx="30" ry="30" />
+                <circle r="40" cx="80" cy="75" style="fill: white;"/>
+                <circle r="30" cx="92" cy="75" style="fill: rgb(255, 0, 0);"/>
+                <polygon  id="test" points="16.667,1.667 6.667,30 31.667,10 1.667,10 26.667,30" style="fill: white;"/>
+            </svg> <br/>
+            <!--TRNC-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:rgb(255, 255, 255)" rx="30" ry="30" />
+                <circle r="30" cx="80" cy="75" style="fill: rgb(255, 0, 0);"/>
+                <circle r="25" cx="92" cy="75" style="fill: rgb(255, 255, 255);"/>
+                <polygon  id="test" points="16.667,1.667 6.667,30 31.667,10 1.667,10 26.667,30" style="fill: rgb(255, 0, 0);"/>
+                <rect width="200" height="15" y="23" style="fill: red;"  />
+                <rect width="200" height="15" y="110" style="fill: red;"  />
+            </svg>
+            <!--Denmark-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:red" rx="30" ry="30" />
+                <rect width="200" height="30" y="60" style="fill:white"/>
+                <rect width="30" height="150" x="60" style="fill:white"/>
+            </svg> <br/>
+            <!--Canada Attempt
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:white" rx="30" ry="30" />
+                <rect width="50" height="150" style="fill:red" rx="30" ry="30" />
+                <rect width="50" height="150" x="150" style="fill:red" rx="30" ry="30" />
+                <rect width="30" height="150" x="20" style="fill:red" rx="0" ry="0" />
+                <rect width="30" height="150" x="145" style="fill:rgb(255, 0, 0)" rx="0" ry="0" />
+                <polygon points="100,75 110,75 107,65 103,65" fill="red" id="leaf" />
+            </svg>
+            -->
+            <!--Georgia-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:white" rx="30" ry="30" />
+                <rect width="200" height="30" y="60" style="fill:red"/>
+                <rect width="30" height="150" x="85" style="fill:red"/>
+                <!--LU-->
+                <rect width="10" height="30" x="40" y="15" fill="red" />
+                <rect width="30" height="10" x="30" y="25" fill="red" />
+                <!--RD-->
+                <rect width="10" height="30" x="150" y="105" fill="red" />
+                <rect width="30" height="10" x="140" y="115" fill="red" />
+                <!--LD-->
+                <rect width="10" height="30" x="40" y="105" fill="red" />
+                <rect width="30" height="10" x="30" y="115" fill="red" />
+                <!--RU-->
+                <rect width="10" height="30" x="150" y="15" fill="red" />
+                <rect width="30" height="10" x="140" y="25" fill="red" />
+            </svg>
+            <!--Switzerland-->
+            <svg width="200" height="150">
+                <rect width="200" height="150" style="fill:red" rx="30" ry="30" />
+                <rect width="10" height="40" x="95" y="50" fill="white" />
+                <rect width="40" height="10" x="80" y="65" fill="white" />
+            </svg> <br/>
+            <!--Bulgaria-->
+        </p>
+    </body>
+</html>
