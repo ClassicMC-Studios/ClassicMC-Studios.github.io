@@ -1,30 +1,26 @@
 let newscollapse;
         function clickedKisou(){
             if(document.getElementById("tbc").innerHTML == "Hi! My Name is Austin. How are you?"){
-                document.getElementById("tbc").innerHTML = "Ki! Be tu Austin. Ker kos see? ";
+                document.getElementById("tbc").innerHTML = "Lou! UlupnomearluAustin ";
             }
             else{
                 document.getElementById("tbc").innerHTML = "Hi! My Name is Austin. How are you?";
             }
         }
         function showBasics(){
-            if(document.getElementById("un").innerHTML == "Hi = <em>Ki</em>"){
+            if(document.getElementById("un").innerHTML == "Hi = <em>Lou</em>"){
                 document.getElementById("un").innerHTML = "";
-                document.getElementById("deux").innerHTML = "";
-                document.getElementById("trois").innerHTML = "";
                 document.getElementById("quatre").innerHTML = "";
                 document.getElementById("cinq").innerHTML = "";
                 document.getElementById("six").innerHTML = "";
                 document.getElementById("sept").innerHTML = "";
             }
             else{
-                document.getElementById("un").innerHTML = "Hi = <em>Ki</em>";
-                document.getElementById("deux").innerHTML = "Hello = <em>Kish</em>";
-                document.getElementById("trois").innerHTML = "What is your name? = <em>Venter kos qo nom?</em>";
-                document.getElementById("quatre").innerHTML = "I am = <em>Be tu</em>";
-                document.getElementById("cinq").innerHTML = "How are you = <em>Ker kos see?</em>";
-                document.getElementById("six").innerHTML = "Good = <em>Paine</em>";
-                document.getElementById("sept").innerHTML = "Bad = <em>Bod</em>";
+                document.getElementById("un").innerHTML = "Hi = <em>Lou</em>";
+                document.getElementById("quatre").innerHTML = "I am = <em>Jtarlu</em>";
+                document.getElementById("cinq").innerHTML = "How are you = <em>Atoserarlu?</em>";
+                document.getElementById("six").innerHTML = "Good = <em>Trej</em>";
+                document.getElementById("sept").innerHTML = "Bad = <em>Chaa</em>";
             }
         }
         function darkmodebeta(){
