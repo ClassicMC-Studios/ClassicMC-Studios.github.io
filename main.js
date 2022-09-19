@@ -17,7 +17,7 @@ let newscollapse;
             }
             else{
                 document.getElementById("un").innerHTML = "Hi = <em>Lou</em>";
-                document.getElementById("quatre").innerHTML = "I am = <em>Jtarlu</em>";
+                document.getElementById("quatre").innerHTML = "I am good/okay = <em>Jtarlutrej</em>";
                 document.getElementById("cinq").innerHTML = "How are you = <em>Atoserarlu?</em>";
                 document.getElementById("six").innerHTML = "Good = <em>Trej</em>";
                 document.getElementById("sept").innerHTML = "Bad = <em>Chaa</em>";
@@ -42,8 +42,8 @@ let newscollapse;
             else{
                 document.getElementById("news1").innerHTML = "<b>The Last Leaf</b><br/>Working on basic Pixel Art testing<br/>110 Lines of code";
                 document.getElementById("news2").innerHTML = "<b>c.Js</b><br/>Version 2.0 out now!<br/><em>Includes</em><br/>New X,Y position based system<br/>Updated Rect to Dot";
-                document.getElementById("news3").innerHTML = "<b>This Website</b><br/>Added Poetry Website<br/>Updating Links<br/>241 Combined lines of code";
-                document.getElementById("news4").innerHTML = "<b>IRL</b><br/>Learning French & Norwegian";
+                document.getElementById("news3").innerHTML = "<b>This Website</b><br/>Added Kuosoian<br/>Updating Links";
+                document.getElementById("news4").innerHTML = "<b>IRL</b><br/>Learning Latin & Nynorsk";
                 newscollapse = true;
             }
         } 
