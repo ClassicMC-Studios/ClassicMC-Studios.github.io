@@ -1,7 +1,7 @@
 let newscollapse;
         function clickedKisou(){
             if(document.getElementById("tbc").innerHTML == "Hi! My Name is Austin. How are you?"){
-                document.getElementById("tbc").innerHTML = "Lou! UlupnomearluAustin ";
+                document.getElementById("tbc").innerHTML = "Lou!UlupnomearluAustin.Atoserarlu? ";
             }
             else{
                 document.getElementById("tbc").innerHTML = "Hi! My Name is Austin. How are you?";
