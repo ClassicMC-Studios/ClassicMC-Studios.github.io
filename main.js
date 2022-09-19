@@ -40,7 +40,7 @@ let newscollapse;
                 newscollapse = false;
             }
             else{
-                document.getElementById("news1").innerHTML = "<b>The Last Leaf</b><br/>Working on basic Pixel Art testing<br/>110 Lines of code";
+                document.getElementById("news1").innerHTML = "<b>A study on Norn, Nynorn & Greenlandic Norse</b><br/>Coming Soon<br/>?? Lines of code";
                 document.getElementById("news2").innerHTML = "<b>c.Js</b><br/>Version 2.0 out now!<br/><em>Includes</em><br/>New X,Y position based system<br/>Updated Rect to Dot";
                 document.getElementById("news3").innerHTML = "<b>This Website</b><br/>Added Kuosoian<br/>Updating Links";
                 document.getElementById("news4").innerHTML = "<b>IRL</b><br/>Learning Latin & Nynorsk";
