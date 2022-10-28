@@ -94,3 +94,8 @@ function strokeActive(){
 function strokeSize(size){
     c.lineWidth = size;
 }
+document.addEventListener('keydown',function (evt){
+    if(event.keyCode == 32){
+        return "space";
+    }
+});
