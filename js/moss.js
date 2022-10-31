@@ -24,7 +24,7 @@ class Studio{
     confirm(conf){
         return confirm(conf.toString());
     }
-    rand(max){
+    random(max){
         return Math.floor(Math.random() * max);
     }
 }
@@ -46,6 +46,11 @@ function rect(x,y,w,h,opacity = 1){
         c.strokeRect(x,y,w,h);
     }
 }
+function image(img,x,y,w,h,opacity=1){
+        c.globalAlpha = opacity;
+        c.drawImage(img,x,y,w,h);
+        c.globalAlpha = 1;
+    }
 function ellipse(x,y,r,opacity = 1){
     c.globalAlpha = opacity;
     c.beginPath();
