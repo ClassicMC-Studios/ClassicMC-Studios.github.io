@@ -4,16 +4,24 @@
     
   </head>
   <body>
-      <script type="text/javascript">
-        var NepPlayer = "#emulator_player636c20025123a";
-        var NepEmu = "gba";
-        
-        var NepLang = "en";
-        var gameUrl = "lg.gba";
-        var NepAutoStart = true;
-        var NepMaxWidth = "640px";
-        var NepMaxHeight = "480px";
+    <div id='emu'></div>
+      <script>
+ 
+      var NepPlayer = "#emu";     
+      // ID of html element where emulator will be inserted
+
+      var NepEmu = "nes";         
+      // Platform select
+
+      var NepLang = "en";
+      // Option "en,rus,ptBR,ja"
+      // Interface language of emulator. EN by default
+
+      var gameUrl = "./lg.gba"; // Game Url
+
+
       </script>
-    <script type='text/javascript' src='https://mem.neptunjs.com/njs/njsLoader.js' id='neptun-js-js'></script>
+
+      <script src="https://mem.neptunjs.com/njs/njsLoader.js" type="text/javascript"/>
   </body>
 </html>
