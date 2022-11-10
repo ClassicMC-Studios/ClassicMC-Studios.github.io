@@ -1,4 +1,5 @@
-/*Color*/
+/*bc.css by, Easton Snow*/
+/*Border init*/
 .bc-black,.bc-hover-black:hover{background-color: black!important;}
 .bc-white,.bc-hover-white:hover{background-color: white!important;}
 .bc-gold,.bc-hover-gold:hover{background-color: gold!important;}
@@ -7,6 +8,7 @@
 .bc-grass,.bc-hover-grass:hover{background-color: rgb(80, 221, 80)!important;}
 .bc-sky,.bc-hover-sky:hover{background-color: skyblue!important;}
 .bc-link,.bc-hover-link:hover{background-color: rgb(0, 0, 199);}
+.bc-mint,.bc-hover-mint:hover{background-color:rgb(162,228,184);}
 /*Text Color*/
 .bc-text-black,.bc-hover-text-black:hover{color: black!important;}
 .bc-text-gold,.bc-hover-text-gold:hover{color: gold!important;}
@@ -15,6 +17,7 @@
 .bc-text-grass,.bc-hover-text-grass:hover{color: rgb(80, 221, 80)!important;}
 .bc-text-sky,.bc-hover-text-sky:hover{color: skyblue!important;}
 .bc-text-link,.bc-hover-text-link:hover{color: rgb(0, 0, 199)!important;text-decoration: underline!important;}
+.bc-text-mint,.bc-hover-text-mint:hover{color:rgb(162,228,184)}
 /*Border Color*/
 .bc-bdc{border-color: black;}
 .bc-bdc-white{border-color: white;}
@@ -23,9 +26,44 @@
 .bc-bdc-sky{border-color: skyblue;}
 .bc-bdc-gold{border-color: gold;}
 .bc-bdc-blue{border-color: goldenrod;}
-/*Borders*/
+/*Border type*/
 .bc-border{border-style:solid!important;border-width: 1px!important;}
 .bc-border-5{border-style:solid!important;border-width: 5px!important;}
 /*Extra*/
-.bc-opacity-half{opacity: 0.5;}
-.bc-opacity-full{opacity: 1;}
+.bc-opacity-half,.bc-hover-opacity-half:hover{opacity: 0.5;}
+.bc-opacity-full,.bc-hover-opacity-full:hover{opacity: 1;}
+.bc-m{margin:0;}
+.bc-m-16{margin: 16;}
+/* Border Radius */
+.bc-r-25{border-radius: 25px;}
+.bc-r-10{border-radius: 10px;}
+.bc-r-5{border-radius: 5px;}
+.bc-r-0{border-radius: 0px;}
+/* Position */
+.bc-absolute{position:absolute!important;}
+.bc-relative{position:relative!important;}
+.bc-fixed{position:fixed!important;}
+/* display type */
+.bc-inline{display: inline;};
+/* Index */
+.bc-index{z-index: -1;}
+/* Anim */
+.bc-spin {animation: rotation 1s infinite linear;}
+.bc-once-spin{animation: rotation 0.5s /*infinite*/ linear;}
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+/* Pos based */
+.bc-true-center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bc-left-center{align-self: center!important;}
+.bc-foot{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
