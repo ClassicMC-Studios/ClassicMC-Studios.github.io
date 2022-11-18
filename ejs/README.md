@@ -3,6 +3,7 @@
 ### *{Note} it is reccomended that you use [https://vscode.dev/](https://vscode.dev/) for code editing*
 
 > You can scroll to whatever <b>tutorial</b> you would like.
+
 <!-- Moss.js basics -->
 ## <em>MossJs basics</em>
 
