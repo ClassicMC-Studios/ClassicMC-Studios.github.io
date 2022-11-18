@@ -72,7 +72,7 @@ rect(x,y,width,height,opacity);
 
 ```js 
 // The operator is for color
-selectColor(#ffffff);
+selectColor("#ffffff");
 ```
 
 
