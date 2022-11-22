@@ -1,6 +1,10 @@
 /*bc.css by, Easton Snow*/
 /*Border init*/
 .bc-black,.bc-hover-black:hover{background-color: black!important;}
+.bc-orange,bc.bc-hover-orange:hover{background-color: orange;}
+.bc-yellow,bc.bc-hover-yellow:hover{background-color: yellow;}
+.bc-red,bc.bc-hover-red:hover{background-color: red;}
+.bc-indigo,bc.bc-hover-indigo:hover{background-color: indigo;}
 .bc-white,.bc-hover-white:hover{background-color: white!important;}
 .bc-gold,.bc-hover-gold:hover{background-color: gold!important;}
 .bc-goldenrod,.bc-hover-goldenrod:hover{background-color: goldenrod!important;}
@@ -10,6 +14,10 @@
 .bc-link,.bc-hover-link:hover{background-color: rgb(0, 0, 199);}
 .bc-mint,.bc-hover-mint:hover{background-color:rgb(162,228,184);}
 /*Text Color*/
+.bc-text-orange,bc.bc-hover-text-orange:hover{background-color: orange;}
+.bc-text-yellow,bc.bc-hover-text-yellow:hover{background-color: yellow;}
+.bc-text-red,bc.bc-hover-text-red:hover{background-color: red;}
+.bc-text-indigo,bc.bc-hover-text-indigo:hover{background-color: indigo;}
 .bc-text-black,.bc-hover-text-black:hover{color: black!important;}
 .bc-text-gold,.bc-hover-text-gold:hover{color: gold!important;}
 .bc-text-goldenrod,.bc-hover-text-goldenrod:hover{color: goldenrod!important;}
@@ -19,6 +27,10 @@
 .bc-text-link,.bc-hover-text-link:hover{color: rgb(0, 0, 199)!important;text-decoration: underline!important;}
 .bc-text-mint,.bc-hover-text-mint:hover{color:rgb(162,228,184)}
 /*Border Color*/
+.bc-bdc-orange{background-color: orange;}
+.bc-bdc-yellow{background-color: yellow;}
+.bc-bdc-red{background-color: red;}
+.bc-bdc-indigo{background-color: indigo;}
 .bc-bdc{border-color: black;}
 .bc-bdc-white{border-color: white;}
 .bc-bdc-green{border-color: #4CAF50;}
