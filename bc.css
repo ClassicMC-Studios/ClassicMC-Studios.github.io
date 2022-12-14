@@ -72,7 +72,7 @@ button:hover{background-color:rgba(29,78,216,255);}
 .bc-rotate--25,.bc-hover-rotate--25:hover{transform: rotate(-25deg)!important;}
 @keyframes rotation {from {transform: rotate(0deg);}to {transform: rotate(360deg);}}
 .bc-true-center{position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);}
-.bc-foot{bottom: 0;left: 50%;transform: translate(-50%, -0%);}
+.bc-foot{position:absolute; bottom: 0;left: 50%;transform: translate(-50%, -0%);}
 .bc-text-align{text-align: center;}
 .bc-text-left{text-align: left;}
 .bc-text-right{text-align: right;}
@@ -85,3 +85,4 @@ button:hover{background-color:rgba(29,78,216,255);}
 .bc-grid-3{display: inline-grid;grid-template-columns: auto auto auto;}
 .bc-grid-4{display: inline-grid;grid-template-columns: auto auto auto auto;}
 .bc-fit{position: absolute; width:fit-content!important; left:50%; transform: translate(-50%,-0%);}
+.bc-max{position:absolute; width:100%;}
