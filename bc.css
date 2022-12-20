@@ -93,3 +93,5 @@ button:hover{background-color:rgba(29,78,216,255);}
 .bc-w-50,.bc-hover-w-50:hover{width: 50%!important;}
 .bc-w-100,.bc-hover-w-100:hover{width: 100%!important;}
 .bc-w-90,.bc-hover-w-90:hover{width: 90%!important;}
+.bc-align-items{align-items:center;}
+.bc-justify-content{jutify-content:center;}
