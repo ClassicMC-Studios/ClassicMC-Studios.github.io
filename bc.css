@@ -86,3 +86,10 @@ button:hover{background-color:rgba(29,78,216,255);}
 .bc-grid-5{display: inline-grid;grid-template-columns: auto auto auto auto auto;}
 .bc-fit{position: absolute; width:fit-content!important; left:50%; transform: translate(-50%,-0%);}
 .bc-max{position:absolute; width:100%;}
+.bc-w-0,.bc-hover-w-0:hover{width: 0%!important;}
+.bc-w-5,.bc-hover-w-5:hover{width: 5%!important;}
+.bc-w-10,.bc-hover-w-10:hover{width: 10%!important;}
+.bc-w-25,.bc-hover-w-25:hover{width: 25%!important;}
+.bc-w-50,.bc-hover-w-50:hover{width: 50%!important;}
+.bc-w-100,.bc-hover-w-100:hover{width: 100%!important;}
+.bc-w-90,.bc-hover-w-90:hover{width: 90%!important;}
