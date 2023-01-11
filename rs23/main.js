@@ -40,7 +40,8 @@ function fade(){
     if(opc >= 0.01){
         opc -= 0.01
         redraw();
-    }else{
+    }
+    if(opc <= 0.02){
         opc = 0;
     }
 }
