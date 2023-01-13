@@ -71,6 +71,14 @@ function clear(){
         console.log("Draw project break/>");
     }
 }
+function rightTriangle(x1,y1,x2,y2,x3,y3){
+    c.beginPath();
+    c.moveTo(x1, y1);
+    c.lineTo(x2, y2);
+    c.lineTo(x3, y3);
+    c.closePath();
+    c.fill();
+}
 function text(text,x,y,size,font,opacity=1){
     c.globalAlpha = opacity;
     c.font = 'bold '+size+'px '+font+'';
