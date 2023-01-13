@@ -7,6 +7,8 @@ let rocks = {r0:document.getElementById("r0"),
 let cr = -2;
 let sky = "lb";
 function redraw(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     if(sky == "db"){
         bg("#00317A");
     }else{
