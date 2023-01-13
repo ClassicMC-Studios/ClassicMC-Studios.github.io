@@ -44,7 +44,10 @@ function redraw(){
 canvas.addEventListener('click', function(event) {
     x = event.clientX;
     y = event.clientY;
-    if(cr == -1){
+    if(cr == -2){
+        cr = -1;
+    }
+    else if(cr == -1){
         if(y <= window.innerHeight/2){
             sky = "lb";
         }else{
@@ -81,3 +84,7 @@ function prev(){
         cr++
     }
 }
+window.main = function(){
+    requestAnimationFrame( main );
+    redraw();
+};main();
