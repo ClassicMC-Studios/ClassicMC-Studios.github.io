@@ -39,8 +39,13 @@ function redraw(){
     if(cr == -1||cr==-2){text("Rock Simulator",window.innerWidth/2-135-10,window.innerHeight/2-130-5,"48","VT323")
     text("Pocket 2023",window.innerWidth/2-77-10,window.innerHeight/2-100,"48","VT323")}
     if(cr == -1){
+       if(window.innerWidth > window.innerHeight){
         text("Press Up (^) for Day",window.innerWidth/2,window.innerHeight-130,"48","VT323")
         text("Press Up (v) for Night",window.innerWidth/2,window.innerHeight-90,"48","VT323")
+       }else{
+        text("(^)",window.innerWidth/2-40,window.innerHeight/2+100,"48","VT323")
+        text("(v)",window.innerWidth/2-40,window.innerHeight/2+140,"48","VT323")
+       }
     }
 };redraw();
 canvas.addEventListener('click', function(event) {
