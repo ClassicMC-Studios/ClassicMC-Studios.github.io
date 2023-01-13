@@ -88,6 +88,11 @@ function redraw(){
 canvas.addEventListener('click', function(event) {
     x = event.clientX;
     y = event.clientY;
+    if(cr ==-1){
+        if(y >= window.innerHeight/2){
+            sky = "db"
+        }
+    }
     if(y >= 50){
         if(cr == -3 || cr == -4 || cr == -5 || cr == -6){
             if(cr == -3){
