@@ -120,3 +120,15 @@ function getCookie(cname) {
     }
     return "";
 }
+// Provide TWO arguments both canvas, and evt
+function getMousePos(canvas, event) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+        x: event.clientX - rect.left,
+        y: event.clientY - rect.top
+    };
+}
+// Provide TWO arguments both mousePos (from getMousePos), and an object array using {} (requires x, y, width, height ) 
+function isInside(pos,rt){
+    return pos.x > rt.x && pos.x < rt.x + rt.width && pos.y <rt.y+rt.height && pos.y > rt.y;
+}
