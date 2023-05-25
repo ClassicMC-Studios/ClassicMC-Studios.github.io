@@ -3,7 +3,7 @@
   main{margin-left:10%;margin-right:10%;} 
   main img{width:200px!important;height:263px!important;}
   div img{width: 100px;height:calc(263px/2);}
-  main img{float: right;}
+  main img{float: right!important;}
   div img{float: left;}
   .fix{margin-right:230px; }
   p{margin-right: 15px;}
@@ -27,3 +27,4 @@
   box{float:right;width:200px;height:180px;border:1px solid black;background-color:rgb(238, 238, 238);}
   mobileBox{float:left;width:136px;height:165px;border:1px solid black;background-color:rgb(238, 238, 238);margin-right:5px;}
  .boxInfo{margin-top:10px;text-align: center;}
+ .bc-border{border-style:solid;border-width: 1px!important;}
