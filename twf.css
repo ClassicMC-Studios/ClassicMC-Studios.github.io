@@ -25,6 +25,7 @@
   .gridEnd{background-color:rgb(238,238,238);padding-left:2px;padding-right:2px;}
   table{background-color:rgb(238,238,238);}
   box{float:right;width:200px;height:180px;border:1px solid black;background-color:rgb(238, 238, 238);}
-  mobileBox{float:left;width:136px;height:165px;border:1px solid black;background-color:rgb(238, 238, 238);margin-right:5px;}
+  mobileBox{display: block;float: left;text-align: center;width: 160px !important;height: 180px !important;margin-right: 10px;border:1px solid black;background-color:rgb(238, 238, 238);}
  .boxInfo{margin-top:10px;text-align: center;}
  .bc-border{border-style:solid;border-width: 1px!important;}
+mobileBoxText{display: block;text-align: left!important;}
