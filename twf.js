@@ -1,8 +1,5 @@
-import { createApp } from 'https://unpkg.com/petite-vue?module'
-function mobile(){
-  	if(window.innerWidth < window.innerHeight){return true;}
-    else{return false;}
+if(window.innerWidth < window.innerHeight){
+	document.getElementById("notMobile").className = 'off';
+}else{
+	document.getElementById("mobile").className = 'off';
 }
-createApp({
-	mobile
-}).mount()
