@@ -40,10 +40,10 @@ let newscollapse;
                 newscollapse = false;
             }
             else{
-                document.getElementById("news1").innerHTML = "<b>A study on Norn, Nynorn & Greenlandic Norse</b><br/>Coming Soon<br/>?? Lines of code";
-                document.getElementById("news2").innerHTML = "<b>c.Js</b><br/>Version 2.0 out now!<br/><em>Includes</em><br/>New X,Y position based system<br/>Updated Rect to Dot";
-                document.getElementById("news3").innerHTML = "<b>This Website</b><br/>Added Kuosoian<br/>Updating Links";
-                document.getElementById("news4").innerHTML = "<b>IRL</b><br/>Learning Latin & Nynorsk";
+                document.getElementById("news1").innerHTML = "<b>GuyotJS</b><br/>Adding n64 games<br/>Word of the Week";
+                document.getElementById("news2").innerHTML = "<b>TheWestonFiles</b><br/>Petite-vue version in development!<br/>Working on banned websites article<br/>Updated mobile design";
+                document.getElementById("news3").innerHTML = "<b>This Website</b><br/>Rarely updated<br/>Updating Links";
+                document.getElementById("news4").innerHTML = "<b>IRL</b><br/>Learning Dutch for a trip to Belgium";
                 newscollapse = true;
             }
         } 
