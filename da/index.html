@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <title>Drawing</title>
+        <script type="text/javascript" src = "https://classicmc-studios.github.io/da/paper-full.js"></script>
+        <style>
+            html,body {
+                height: 100%;
+            }
+
+            /* Scale canvas with resize attribute to full size */
+            canvas[resize] {
+                width: 100%;
+                height: 100%;
+            }
+            #myCanvas{
+                position:fixed;
+            }
+        </style>
+        <script type="text/paperscript" canvas="myCanvas">
+        	// can i make a project work tho
+          var triangleShift = -65;
+          var textItem = new PointText({
+          	content: 'Click and drag to draw a line.',
+            point: new Point(window.innerWidth/2-90, 30),
+            fillColor: 'black',
+         	});
+          var path = new Path();
+          path.strokeColor = 'black';
+          var start = new Point(window.innerWidth/2+triangleShift, 100);
+          path.moveTo(start);
+          path.lineTo(window.innerWidth/2+triangleShift+50,200);
+          path.lineTo(window.innerWidth/2+triangleShift+100,100);
+          path.lineTo(window.innerWidth/2+triangleShift+0,100);
+        </script>
+    </head>
+    <body>
+        <canvas id = "myCanvas" resize="true"></canvas>
+    </body>
+</html>
