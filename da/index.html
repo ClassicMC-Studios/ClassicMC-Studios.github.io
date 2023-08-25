@@ -26,13 +26,24 @@
             point: new Point(window.innerWidth/2-90, 30),
             fillColor: 'black',
          	});
+          var path2 = new Path.Rectangle({
+						point: [window.innerWidth/2-(75/2), 75],
+						size: [75, 75],
+						strokeColor: 'black',
+            fillColor: 'white'
+					});
           var path = new Path();
           path.strokeColor = 'black';
+          path.fillColor = 'white'
           var start = new Point(window.innerWidth/2+triangleShift, 100);
           path.moveTo(start);
           path.lineTo(window.innerWidth/2+triangleShift+50,200);
           path.lineTo(window.innerWidth/2+triangleShift+100,100);
           path.lineTo(window.innerWidth/2+triangleShift+0,100);
+          function onFrame(){
+          	path.rotate(3);
+            path2.rotate(3);
+          }
         </script>
     </head>
     <body>
