@@ -29,8 +29,8 @@ class Studio{
     }
 }
 function createCanvas(width,height){
-    canvas.width = width;
-    canvas.height = height;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     this.stroke = true;
 }
 function image(img,x,y,w,h,opacity=1){
@@ -70,6 +70,14 @@ function clear(){
     while(true){
         console.log("Draw project break/>");
     }
+}
+function triangle(x1,y1,x2,y2,x3,y3){
+    c.beginPath();
+    c.moveTo(x1, y1);
+    c.lineTo(x2, y2);
+    c.lineTo(x3, y3);
+    c.closePath();
+    c.fill();
 }
 function text(text,x,y,size,font,opacity=1){
     c.globalAlpha = opacity;
@@ -119,16 +127,4 @@ function getCookie(cname) {
         }
     }
     return "";
-}
-// Provide TWO arguments both canvas, and evt
-function getMousePos(canvas, event) {
-    var rect = canvas.getBoundingClientRect();
-    return {
-        x: event.clientX - rect.left,
-        y: event.clientY - rect.top
-    };
-}
-// Provide TWO arguments both mousePos (from getMousePos), and an object array using {} (requires x, y, width, height ) 
-function isInside(pos,rt){
-    return pos.x > rt.x && pos.x < rt.x + rt.width && pos.y <rt.y+rt.height && pos.y > rt.y;
 }
