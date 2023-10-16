@@ -29,8 +29,8 @@ class Studio{
     }
 }
 function createCanvas(width,height){
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
     this.stroke = true;
 }
 function image(img,x,y,w,h,opacity=1){
