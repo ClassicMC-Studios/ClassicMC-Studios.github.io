@@ -1,5 +1,5 @@
-/*bc.css by, Easton Snow*/
-* {margin: 0; padding: 0; font-family: sans-serif; color:black;transition: 0.3s;}
+/*bc.css by, Weston Schnee*/
+* {margin: 0; padding: 0; font-family: sans-serif;transition: 0.3s;}
 .bc-black,.bc-hover-black:hover{background-color: black!important;}
 .bc-orange,bc.bc-hover-orange:hover{background-color: orange!important;}
 .bc-yellow,bc.bc-hover-yellow:hover{background-color: yellow!important;}
@@ -84,7 +84,7 @@ button:hover{background-color:rgba(29,78,216,255);}
 .bc-grid-3{display: inline-grid;grid-template-columns: auto auto auto;}
 .bc-grid-4{display: inline-grid;grid-template-columns: auto auto auto auto;}
 .bc-grid-5{display: inline-grid;grid-template-columns: auto auto auto auto auto;}
-.bc-fit{position: absolute; width:fit-content!important; left:50%; transform: translate(-50%,-0%);}
+.bc-fit{position: absolute; width:fit-content!important; left:50%; transform: translate(-50%,-0%);position: relative;}
 .bc-max{position:absolute; width:100%;}
 .bc-w-0,.bc-hover-w-0:hover{width: 0%!important;}
 .bc-w-5,.bc-hover-w-5:hover{width: 5%!important;}
@@ -94,4 +94,4 @@ button:hover{background-color:rgba(29,78,216,255);}
 .bc-w-100,.bc-hover-w-100:hover{width: 100%!important;}
 .bc-w-90,.bc-hover-w-90:hover{width: 90%!important;}
 .bc-align-items{align-items:center;}
-.bc-justify-content{jutify-content:center;}
+.bc-justify-content{justify-content:center;}
