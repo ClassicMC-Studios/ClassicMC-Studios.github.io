@@ -1,4 +1,4 @@
-/*bc.css by, Weston Schnee*/
+/*bc.css by, Nov. 15 2023 +bc-left-50  Weston Schnee*/
 * {margin: 0; padding: 0; font-family: sans-serif;transition: 0.3s;}
 .bc-black,.bc-hover-black:hover{background-color: black!important;}
 .bc-orange,bc.bc-hover-orange:hover{background-color: orange!important;}
@@ -95,3 +95,4 @@ button:hover{background-color:rgba(29,78,216,255);}
 .bc-w-90,.bc-hover-w-90:hover{width: 90%!important;}
 .bc-align-items{align-items:center;}
 .bc-justify-content{justify-content:center;}
+.bc-left-50{position: absolute;left: 50%;transform: translate(-50%);position: relative;}
