@@ -1,5 +1,5 @@
-/*bc.css by, Nov. 15 2023 +bc-left-50  Weston Schnee*/
-* {margin: 0; padding: 0; font-family: sans-serif;transition: 0.3s;}
+/*bc.css by, Nov. 16 2023 + *{color:black;}  Weston Schnee*/
+* {margin: 0; padding: 0; font-family: sans-serif;transition: 0.3s;color:black;}
 .bc-black,.bc-hover-black:hover{background-color: black!important;}
 .bc-orange,bc.bc-hover-orange:hover{background-color: orange!important;}
 .bc-yellow,bc.bc-hover-yellow:hover{background-color: yellow!important;}
