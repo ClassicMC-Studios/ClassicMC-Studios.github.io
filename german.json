@@ -1,0 +1,18 @@
+[
+    {
+        "g":"Du bist immer noch -- mensch!",
+        "e":"You are still the same person!",
+        "a":["sammeln",false],
+        "b":["der",false],
+        "c":["derselbe",true],
+        "d":["macht",false]
+    },
+    {
+        "g":"Ich gehe nicht rause -- es regnet!",
+        "e":"I'm not going out because it's raining!",
+        "a":["ob",false],
+        "b":["weil",true],
+        "c":["wann",false],
+        "d":["wohin",false]
+    }
+]
